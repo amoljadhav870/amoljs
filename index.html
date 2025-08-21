@@ -1,10 +1,11 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Starter Website</title>
-  <meta name="description" content="A modern, responsive website built with only HTML, CSS, and JavaScript." />
+  <title>IronForge Fitness — Bodybuilding Gym</title>
+  <meta name="description" content="Bodybuilding programs, classes, trainers, and tools to plan your transformation." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:," />
 </head>
@@ -13,14 +14,15 @@
 
   <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="#home" aria-label="Home">✨ Brand</a>
+      <a class="logo" href="#home" aria-label="Home">💪 IronForge</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
       <nav class="nav-menu" aria-label="Primary">
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#programs">Programs</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#tools">Tools</a>
+        <a href="#pricing">Pricing</a>
         <a href="#contact">Contact</a>
         <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
       </nav>
@@ -31,79 +33,198 @@
     <!-- Hero -->
     <section id="home" class="hero">
       <div class="container hero-inner">
-        <h1>Build fast. Look great.</h1>
-        <p>A lightweight template to kickstart your next project. No frameworks, just clean code.</p>
+        <h1>Build muscle. Burn fat. <span class="accent">Own your strength.</span></h1>
+        <p>Evidence-based bodybuilding coaching with structured plans and elite trainers. Start your transformation today.</p>
         <div class="cta">
-          <a class="btn primary" href="#features">See Features</a>
-          <a class="btn ghost" href="#contact">Get in Touch</a>
+          <a class="btn primary" href="#programs">Explore Programs</a>
+          <a class="btn ghost" href="#tools">Try Calculators</a>
         </div>
+        <ul class="badges">
+          <li>🏋️ 24×7 Access</li>
+          <li>🥗 Nutrition Plans</li>
+          <li>📊 Progress Tracking</li>
+        </ul>
       </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="section">
+    <!-- Programs -->
+    <section id="programs" class="section">
       <div class="container">
-        <h2 class="section-title">Features</h2>
+        <h2 class="section-title">Bodybuilding Programs</h2>
         <div class="grid features">
           <article class="card">
-            <h3>Responsive</h3>
-            <p>Looks crisp on phones, tablets, and desktops with a fluid grid and modern CSS.</p>
+            <h3>Hypertrophy Push/Pull/Legs</h3>
+            <p>6-day split focused on volume landmarks, progressive overload, and pump work.</p>
+            <ul>
+              <li>3–4 sets × 8–15 reps</li>
+              <li>RIR 0–2 on last set</li>
+              <li>Deload every 4–6 weeks</li>
+            </ul>
           </article>
           <article class="card">
-            <h3>Accessible</h3>
-            <p>Keyboard-friendly navigation, proper landmarks, and sensible contrast out of the box.</p>
+            <h3>Strength Foundations</h3>
+            <p>3-day full-body with squat/bench/deadlift emphasis, ideal for beginners.</p>
+            <ul>
+              <li>Linear progression</li>
+              <li>RPE 6–8</li>
+              <li>Technique drills</li>
+            </ul>
           </article>
           <article class="card">
-            <h3>Fast</h3>
-            <p>No heavy libraries. Minimal CSS & JS delivers great performance.</p>
+            <h3>Cutting Phase</h3>
+            <p>Fat loss with muscle retention. Higher reps, shorter rests, cardio blocks.</p>
+            <ul>
+              <li>Calorie deficit plan</li>
+              <li>Supersets & circuits</li>
+              <li>Weekly check-ins</li>
+            </ul>
           </article>
           <article class="card">
-            <h3>Customizable</h3>
-            <p>Update colors, spacing, and components via CSS variables in one place.</p>
+            <h3>Glutes & Core Sculpt</h3>
+            <p>Lower-body and core specialization with progressive overload and tempo work.</p>
+            <ul>
+              <li>4-day split</li>
+              <li>Time-under-tension</li>
+              <li>Accessory focus</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section alt">
-      <div class="container two-col">
-        <div>
-          <h2 class="section-title">About This Template</h2>
-          <p>This starter keeps things simple while still giving you a polished baseline. Add sections, tweak styles, and ship.</p>
-          <ul class="checklist">
-            <li>Clean, semantic HTML</li>
-            <li>Utility classes for spacing</li>
-            <li>Theme toggle (light/dark)</li>
-            <li>Vanilla JS enhancements</li>
-          </ul>
-        </div>
-        <div class="about-media" aria-hidden="true">
-          <div class="blob"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section id="gallery" class="section">
+    <!-- Trainers -->
+    <section id="trainers" class="section alt">
       <div class="container">
-        <h2 class="section-title">Gallery</h2>
-        <div class="grid gallery">
-          <!-- Placeholder images using gradients -->
-          <figure class="ph"><figcaption>Card 1</figcaption></figure>
-          <figure class="ph"><figcaption>Card 2</figcaption></figure>
-          <figure class="ph"><figcaption>Card 3</figcaption></figure>
-          <figure class="ph"><figcaption>Card 4</figcaption></figure>
-          <figure class="ph"><figcaption>Card 5</figcaption></figure>
-          <figure class="ph"><figcaption>Card 6</figcaption></figure>
+        <h2 class="section-title">Meet the Trainers</h2>
+        <div class="grid trainers">
+          <article class="coach">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h3>Alex “The Architect” Rao</h3>
+              <p>CSCS, 8 yrs experience. Specializes in periodization & hypertrophy.</p>
+            </div>
+          </article>
+          <article class="coach">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h3>Meera Kapoor</h3>
+              <p>Nutrition coach. Expert in recomposition & sustainable fat loss.</p>
+            </div>
+          </article>
+          <article class="coach">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h3>Rohit Sharma</h3>
+              <p>Powerlifting coach focused on technique, bracing, and peaking.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section id="tools" class="section">
+      <div class="container">
+        <h2 class="section-title">Training Tools</h2>
+        <div class="grid tools">
+          <article class="tool card">
+            <h3>BMI Calculator</h3>
+            <form id="bmiForm" class="form mini" novalidate>
+              <div class="form-row">
+                <label for="height">Height (cm)</label>
+                <input id="height" name="height" inputmode="decimal" required />
+              </div>
+              <div class="form-row">
+                <label for="weight">Weight (kg)</label>
+                <input id="weight" name="weight" inputmode="decimal" required />
+              </div>
+              <button class="btn primary" type="submit">Calculate BMI</button>
+              <p id="bmiResult" class="result" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article class="tool card">
+            <h3>1RM Estimator (Epley)</h3>
+            <form id="ormForm" class="form mini" novalidate>
+              <div class="form-row">
+                <label for="load">Load (kg)</label>
+                <input id="load" name="load" inputmode="decimal" required />
+              </div>
+              <div class="form-row">
+                <label for="reps">Reps (1–12)</label>
+                <input id="reps" name="reps" inputmode="numeric" required />
+              </div>
+              <button class="btn primary" type="submit">Estimate 1RM</button>
+              <p id="ormResult" class="result" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article class="tool card">
+            <h3>Weekly Class Schedule</h3>
+            <div class="schedule">
+              <div class="filters">
+                <label>Filter:
+                  <select id="dayFilter">
+                    <option value="all">All Days</option>
+                    <option>Mon</option><option>Tue</option><option>Wed</option>
+                    <option>Thu</option><option>Fri</option><option>Sat</option><option>Sun</option>
+                  </select>
+                </label>
+              </div>
+              <table class="table" id="scheduleTable" aria-describedby="sched-help">
+                <thead><tr><th>Day</th><th>Class</th><th>Time</th><th>Coach</th></tr></thead>
+                <tbody></tbody>
+              </table>
+              <small id="sched-help" class="muted">Tip: use the filter to view specific days.</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Membership Pricing</h2>
+        <div class="grid pricing">
+          <article class="price card">
+            <h3>Starter</h3>
+            <p class="big">₹1,499<span class="small">/mo</span></p>
+            <ul>
+              <li>Gym access</li>
+              <li>Starter plan</li>
+              <li>App tracking</li>
+            </ul>
+            <a href="#contact" class="btn primary">Join Starter</a>
+          </article>
+          <article class="price card featured">
+            <h3>Pro</h3>
+            <p class="big">₹2,999<span class="small">/mo</span></p>
+            <ul>
+              <li>Everything in Starter</li>
+              <li>2 PT sessions / mo</li>
+              <li>Nutrition plan</li>
+            </ul>
+            <a href="#contact" class="btn primary">Go Pro</a>
+          </article>
+          <article class="price card">
+            <h3>Elite</h3>
+            <p class="big">₹5,999<span class="small">/mo</span></p>
+            <ul>
+              <li>Unlimited PT</li>
+              <li>Custom periodization</li>
+              <li>Monthly DEXA</li>
+            </ul>
+            <a href="#contact" class="btn primary">Be Elite</a>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section alt">
+    <section id="contact" class="section">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Contact Us</h2>
         <form id="contactForm" class="form" novalidate>
           <div class="form-row">
             <label for="name">Name</label>
@@ -129,7 +250,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Your Brand — All rights reserved.</p>
+      <p>© <span id="year"></span> IronForge Fitness — All rights reserved.</p>
       <a href="#home" class="to-top" aria-label="Back to top">↑</a>
     </div>
   </footer>
